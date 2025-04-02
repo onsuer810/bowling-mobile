@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>rules</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1,user-scalable=no, width=device-width">
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+    <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp">
+
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="rules.css" type="text/css">
+
+    <script type="text/javascript">window.web_page_integration_dry_run = true;</script>
+    <!--<script type="module" src="rules.js" b4w-offset="../../.."></script>-->
+</head>
+
+<body style="background-color:ivory;">
+    <div id="butt1" class="button1" onclick="switchLang('ru')">ru</div>
+    <div id="butt2" class="button1" onclick="switchLang('en')">en</div>
+    <div id="en">
+        <h1>Basic rules of the game</h1>
+        <p>
+            A bowling game consists of 10 frames.
+            For each frame, the player is allowed to make two throws to knock down all 10 pins.
+            <ul>
+                <li>
+                    If it took a player 2 balls to knock down all 10 pins on a frame,
+                    then the player is awarded a spare. It is displayed on the screen in this form - "/".
+                    For example, a player can knock down 7 pins on the first throw and 3 on the second.
+                </li>
+                <li>
+                    If the player does not knock down any of the 10 pins on the first throw,
+                    but then he knocks everything down from the second one at once, 
+                    then he is still awarded a special,
+                    and not a strike, because it took him 2 balls to knock down the pins.
+                </li>
+                <li>
+                    An open frame is obtained when a player does not knock down any of the pins on both throws.
+                </li>
+            </ul>
+        </p>
+        <h2>How to read the scoring table</h2>
+        <p>
+            The table shows the player's name and each of the ten frames played,
+            after which the total score is indicated. In each square of the frame (except the last one)
+            there are 2 more squares where the number of pins knocked down for each throw is recorded.
+            <ul>
+                <li>
+                    The last tenth frame is divided into three squares.
+                    It records the results of the third throw to be made,
+                    when a player gets a strike or a save on the tenth frame.
+                </li>
+            </ul>
+        </p>
+
+        <h2>An open frame</h2>
+        <p>
+            When calculating the open frame, you just need to add up the number of pins,
+            knocked down after the first throw, with the number of pins knocked down after the second.
+            This will be the total point for this frame.
+        </p>
+        <ul>
+            <li>
+                In bowling, points are counted incrementally.
+                A new score is added to the previous one and recorded in the square of each frame.
+                For example, if a player knocks down 3 pins on the first frame after the first throw and
+                If there are 2 pins after the second one, then the number 5 is written in the square of the first frame.
+                If a player knocks down a total of 7 pins on the second frame,
+                then the number 12 is written in the square of the second frame.
+            </li>
+        </ul>
+
+        <h2>How to calculate spare</h2>
+        <p>
+            If the player has a spare, then the number is written in the first square
+            the pins are knocked down from the first throw, and an oblique line "/" is placed in the second square.
+        </p>
+        <ul>
+            <li>
+                Spare is awarded 10 points, plus the number of pins that the player knocks down on the next throw.
+                For example, if a player gets a save on the first frame, and then he knocks down 7 pins
+                after the first throw during the second frame, the number 17 is written in the square of the first frame.
+            </li>
+        </ul>
+
+        <h2>How to calculate a strike</h2>
+        <p>
+            If a player strikes, they write an "X" in the square for the second throw.
+        </p>
+        <ul>
+            <li>
+                10 points are awarded for a strike, plus the number of pins knocked down in the next 2 throws.
+                For example, if a player has a strike on the first frame,
+                and then on the second frame he knocks down 5 pins after the first shot and 4 pins after the second,
+                then the total score of 19 is written in the square of the first frame.
+            </li>
+            <li>
+                If a player hits a strike and then strikes again, the points are added anyway
+                according to the results of the following throws. Thus, if the player gets
+                If there are strikes on all three frames, then the total score for the first frame will be 30.
+            </li>
+        </ul>
+    </div>
+    <div id="ru">
+        <h1>Основные правила игры</h1>
+        <p>
+            Игра в боулинг состоит из 10 фреймов ("frame").
+            За каждый фрейм игроку разрешается сделать два броска,
+            чтобы сбить все 10 кеглей.
+            <ul>
+                <li>
+                    Если игроку потребовалось 2 шара, чтобы сбить все 10 кеглей на каком-нибудь фрейме,
+                    то игроку присуждается спэа ("spare"). На экране отображается в таком виде - "/".
+                    Например, игрок может сбить 7 кеглей с первого броска и 3 со второго.
+                </li>
+                <li>
+                    Если игрок не сбивает ни одной из 10 кеглей с первого броска,
+                    но затем сбивает все сразу со второго, то ему все равно присуждается спэа,
+                    а не страйк, потому что ему потребовалось 2 шара, чтобы сбить кегли.
+                </li>
+                <li>
+                    Открытый фрейм получается, когда игрок не сбивает ни одной из кеглей за оба броска.
+                </li>
+            </ul>
+        </p>
+        <h2>Как читать таблицу подсчета очков</h2>
+        <p>
+            На таблице указывается имя игрока и каждый из сыгранных десяти фреймов,
+            после которых указывается общий счет. В каждом квадрате фрейма (кроме последнего)
+            есть еще 2 квадратика, где записывают число сбитых за каждый бросок кеглей.
+            <ul>
+                <li>
+                    Последний десятый фрейм делится на три квадратика.
+                    В нем записывают результаты третьего броска, который нужно сделать,
+                    когда у игрока на десятом фрейме получается страйк или спэа.
+                </li>
+            </ul>
+        </p>
+
+        <h2>Открытый фрейм</h2>
+        <p>
+            Подсчитывая открытый фрейм, вам нужно просто сложить число кеглей,
+            сбитых после первого броска, с числом кеглей, сбитых после второго.
+            Это будет общее очко за этот фрейм.
+        </p>
+        <ul>
+            <li>
+                В боулинге очки считаются по нарастающей.
+                Новый счет добавляется к предыдущему и записывается в квадрат каждого фрейма.
+                Например, если на первом фрейме игрок сбивает 3 кегли после первого броска и
+                2 кегли после второго, то в квадрате первого фрейма записывают цифру 5.
+                Если игрок сбивает в общей сложности 7 кеглей на втором фрейме,
+                то в квадрате второго фрейма пишут цифру 12.
+            </li>
+        </ul>
+
+        <h2>Как подсчитывать спэа</h2>
+        <p>
+            Если у игрока вышел спэа, то в первом квадратике записывается число
+            кеглей сбитых с первого броска, а во втором квадратике ставится косая линия "/".
+        </p>
+        <ul>
+            <li>
+                За спэа дают 10 очков, плюс число кеглей, которые игрок сбивает при следующем броске.
+                Например, если у игрока получается спэа на первом фрейме, а затем он сбивает 7 кеглей
+                после первого броска во время второго фрейма, то в квадрате первого фрейма пишут цифру 17.
+            </li>
+        </ul>
+
+        <h2>Как подсчитывать страйк</h2>
+        <p>
+            Если игрок выбивает страйк, то ему пишут "X" в квадратике для второго броска.
+        </p>
+        <ul>
+            <li>
+                За страйк засчитывают 10 очков, плюс число кеглей, сбитых за следующие 2 броска.
+                Например, если у игрока получился страйк на первом фрейме,
+                а затем на втором фрейме он сбивает 5 кеглей после первого броска и 4 кегли после второго,
+                то в квадрате первого фрейма пишут общий счет 19.
+            </li>
+            <li>
+                Если игрок выбивает страйк, а затем снова страйк, то очки все равно добавляются
+                согласно результатам следующих бросков. Таким образом, если у игрока получаются
+                страйки на всех трех фреймах, то общий счет за первый фрейм будет 30.
+            </li>
+        </ul>
+    </div>
+    <!--<div id="butt1" class="button1">ru</div>
+
+    <div id="butt2" class="button1">en</div>-->
+
+
+    <script>
+        function switchLang(lang) {
+            document.getElementById('en').style.display = (lang === 'en') ? 'block' : 'none';
+            document.getElementById('ru').style.display = (lang === 'ru') ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

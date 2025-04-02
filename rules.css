@@ -1,0 +1,94 @@
+﻿*:active {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -moz-tap-highlight-color: rgba(0,0,0,0);
+    -tap-highlight-color: rgba(0,0,0,0);
+}
+
+:-webkit-full-screen #controls-container,
+:-moz-full-screen #controls-container,
+:-ms-fullscreen #controls-container,
+body {
+    
+    background-color: ivory;
+    margin: 0;
+    overflow: visible;
+}
+
+#butt1 {
+    position: fixed;
+    right: 0px;
+    height: 5px;
+    width: 5px;
+}
+    #butt1.button1 {        
+        font-weight: 700;
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        padding: .8em 1em calc(.8em + 3px);
+        border-radius: 3px;
+        background: rgb(64,199,129);
+        box-shadow: 0 -3px rgb(53,167,110) inset;
+        transition: 0.2s;
+    }
+    #butt1.button1:hover {
+        background: rgb(53, 167, 110);
+    }
+    #butt1.button1:active {
+        background: rgb(33,147,90);
+        box-shadow: 0 3px rgb(33,147,90) inset;        
+    }
+/*<a href="rules.html" target="_blank" rel="noopener noreferrer">Bowling rules.</a>*/
+/*<a href="rules.html" onclick="openRules(event)">Bowling rules.</a>*/
+#butt2 {
+    position: fixed;
+    right: 50px;
+    height: 5px;
+    width: 5px;
+}
+    #butt2.button1 {
+        font-weight: 700;
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        padding: .8em 1em calc(.8em + 3px);
+        border-radius: 3px;
+        background: rgb(64,199,129);
+        box-shadow: 0 -3px rgb(53,167,110) inset;
+        transition: 0.2s;
+    }
+        #butt2.button1:hover {
+            background: rgb(53, 167, 110);
+        }
+        #butt2.button1:active {
+            background: rgb(33,147,90);
+            box-shadow: 0 3px rgb(33,147,90) inset;            
+        }
+#ru {
+    display:none;
+}
+#en {
+    display: block;
+}
+h1 {
+    text-align: center;
+    color: blue;
+}
+h2 {
+    font-weight: normal;
+    text-align: center;
+    color: green;
+}
+p {
+    /*font-weight: bold;
+    font-family: Arial; , Times, serif Arial;*/
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+}
+/*ul {
+    text-align: center;
+    
+}*/

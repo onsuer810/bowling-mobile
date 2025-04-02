@@ -1,0 +1,121 @@
+<!DOCTYPE html><html><head><title>Bowling</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />--><meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin"><meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp"><link rel="shortcut icon" href="#"><link type="text/css" rel="stylesheet" href="my_project.min.css?v=01042025232021"><script type="text/javascript" src="./my_project.min.js?v=01042025232021"></script><script type="text/javascript">
+        window.web_page_integration_dry_run = true;
+    </script></head><body><!-- <div id="logo" > My Game</div >--><!-- <div class="icon" data-tooltip="Profile" > 👤</div ><div class="icon" data-tooltip="Notifications" > 🔔</div >--><div id="top" class="hidden"><div id="bowlrate" class="rate">Bowling currency exchange rate:</div><div id="bowlvalue" class="rateval">1.76</div><div id="rslt" class="rs">The Best Result:</div><div id="result" class="res">123</div><div id="laps" class="lp">Left:</div><div id="laps2" class="lp2">5 rounds + 3 extra</div><div id="menu"><div class="icon" data-tooltip="Game Control">⚙️</div></div></div><!--<img src="../my_project/assets/pozadiWhiteLast.png" width="1360" height="720">--><div id="controls-container"><div class="top-line"></div><div class="bottom-line"><div class="button-container"><div class="delete-container button data-button"><div id="delete"></div><div id="cup" class="button data-button"></div></div><div id="load-1" class="button data-button">New round</div><div id="load-2" class="button data-button"></div><div id="load-3" class="button data-button"></div><div id="load-4" class="button data-button"></div><div id="load-5" class="button data-button"></div><div id="load-6" class="button data-button"></div><div id="load-7" class="button data-button"></div><div id="load-8" class="button data-button">New game</div><div class="rot-button-container"><div class="button rotation-button rotation-button-left"><div id="rot-ccw"></div></div><div class="button rotation-button rotation-button-right"><div id="rot-cw"></div></div></div><!--<a href="index.html"><div id="exit" class="button data-button"></div></a>--></div></div></div><!-- Контейнер для новых маленьких кнопок --><div id="contr-container"><div class="butt-container"><div id="loa-1" class="data-button small-button"></div><div id="loa-2" class="data-button small-button"></div><div id="loa-3" class="data-button small-button"></div><div id="loa-4" class="data-button small-button"></div><div id="loa-5" class="data-button small-button"></div></div></div><div id="lastMess" class="button mess"><span>Show last message</span></div><div id="wait">Wait</div><div id="centr"><table border="1"><tr><th>
+                    The rules of the game. Level 1
+                    <div id="XMenu" class="button buy">X</div></th></tr><tr><td><p>
+                        The goal of the game is to earn enough points to buy the <i>Winner's Cup.</i>
+                        The player is given 5 rounds + 3 extra rounds.
+                    </p><p>
+                        Each round consists of 10 frames, each frame consists of 2 throws.
+                        Points are counted according to the
+                        <a href="rules.html" target="_blank" rel="noopener noreferrer">Bowling rules.</a></p><p>
+                        In our game, these points are added to:
+                        <ul><li>10 points for each Strike</li><li>5 points for each Spare</li><li>50 points for each Best score</li></ul></p><p>
+                        The points earned in each round are converted into Bowling Currency
+                        (<strike><i> BL</i></strike>) at the current exchange rate.(Bowling currency exchange rate),<br>
+                        which changes during the game (and the lower the exchange rate, the more money).
+                    </p><p>
+                        After completing each round (during the break of the game),
+                        you can make purchases in the store.
+                        (In the Left submenu, click the 'Buy' button,<br>
+                        in the Right the button to the right of the selected ball.)
+
+                    </p><p>
+                        If there are no regular rounds anymore, but there are extra round,
+                        and there is not enough money to buy, you can sell a ball<br> from the Player's
+                        collection (a row of balls at the bottom) and buy an extra round.<br>
+                        To do this, click on 'Sell' in the Left submenu,
+                        and then on the ball in the Player's collection that you want to sell.<br>
+                        Then buy an extra round.
+                    </p><p><span>
+                            The Player's first task is to buy all the balls in the available number of rounds.
+                        </span>
+                        The first ball is loaned to the Player at the beginning of the entire game.
+                    </p><p>
+                        After buying the fifth ball, the Player's money is converted into points,
+                        and it's time to complete <span>
+                            the Player's main task, namely,<br>
+                            accumulating 1,500 points to receive the Winner's Cup:
+                        </span><ul><li>
+                                If there are any unused rounds left, you need (or can) play them.
+                                But these results will no longer be exchanged for currency (<strike><i> BL</i></strike>),<br>
+                                but will accumulate in the form of points.
+                            </li><li>
+                                If there are no unused rounds,
+                                the Player is given one more additional round,
+                                the result of which will also be saved as points.
+                            </li></ul></p><p>
+                        You need to add points to these points by exchanging balls
+                        (available in the Player's collection) for points.
+                        To do this, click on the<br> 'Cvt'(Convert) button in the Left submenu,
+                        and then on the ball in the Player's collection that you want to swap.<br>
+                        When there are enough points to get the Cup (1,500),
+                        click on 'Take' to the right of the Cup image in the Right submenu.
+                    </p><p>
+                        That's it! Getting the Cup is A VICTORY!
+                    </p><p>
+                        The points and balls that the Player has left go to the next Level.
+                    </p></td></tr></table></div><div id="right"><div class="store-title">Store</div><div id="bowl_01" class="store-item" style="position: relative;"><span class="tooltip"><span><strike><i> BL</i></strike> 80
+                    <img src="../my_project/assets/Balls/BBall00X_Inv.png" width="35" height="35">
+                    Default ball
+                </span></span><span class="tooltiptext" id="tooltip_bowl_01"></span></div><div id="bowl_02" class="store-item" style="position: relative;"><span class="tooltip"><span><strike><i> BL</i></strike> 99
+                    <img src="../my_project/assets/Balls/BBall011_Inv.png" width="35" height="35">
+                    Fast ball
+                </span></span><span class="tooltiptext" id="tooltip_bowl_02"></span></div><div id="bowl_03" class="store-item" style="position: relative;"><span class="tooltip"><span><strike><i> BL</i></strike> 149
+                    <img src="../my_project/assets/Balls/BBall02X_Inv.png" width="35" height="35">
+                    Accurate ball
+                </span></span><span class="tooltiptext" id="tooltip_bowl_03"></span></div><div id="bowl_04" class="store-item" style="position: relative;"><span class="tooltip"><span><strike><i> BL</i></strike> 169
+                    <img src="../my_project/assets/Balls/BBall06X_Inv.png" width="35" height="35">
+                    The twisted ball
+                </span></span><span class="tooltiptext" id="tooltip_bowl_04"></span></div><div id="bowl_05" class="store-item" style="position: relative;"><span class="tooltip"><span><strike><i> BL</i></strike> 189
+                    <img src="../my_project/assets/Balls/BBall08X_Inv.png" width="35" height="35">
+                    Crazy Ball
+                </span></span><span class="tooltiptext" id="tooltip_bowl_05"></span></div><div id="newLap" class="store-item" style="position: relative;"><span class="tooltip"><span><strike><i> BL</i></strike> 45
+                    <img src="../my_project/assets/Balls/Lap010.png" width="35" height="35">
+                    Extra round
+                </span></span><span class="tooltiptext" id="tooltip_newLap"></span></div><div id="cup_cup" class="store-item" style="position: relative;"><span class="tooltip"><span>
+                    Point 1500
+                    <img src="../my_project/assets/Balls/Cup_RedOval.png" width="35" height="35">
+                    Winner's Cup
+                </span></span><span class="tooltiptext" id="tooltip_Cup"></span></div></div><button id="toggle-store">Hide</button><div id="show" class="button buy"></div><!--<div id="show-hideRight"><table border="1" width="70" height="40"><tr><td><div id="show" class="button buy"><span>Show</span></div></td></tr></table></div>--><!--<div id="exit-wind"><table border="0" width="370" height="70"><tr><th>
+                    Exit Game<br>
+                    Are you sure?
+                </th></tr><tr><td><a href="index.html"><div id="butt3" class="button targ" height="5">Yes</div></a><div id="butt4" class="button targ" height="5"><span>Cancel</span></div></td></tr></table></div>--><div id="nextgame-wind"><table border="0" width="370" height="70"><tr><th>
+                    New Game<br>
+                    Are you sure?
+                </th></tr><tr><td><a href="my_project.html"><div id="butt5" class="button targ" height="5">Yes</div></a><div id="butt6" class="button targ" height="5"><span>Cancel</span></div></td></tr></table></div><div id="show-wind"><table border="0" width="370" height="40"><tr><th>
+                    Message:
+                </th></tr><tr><td><div id="myDialog" class="button win">Просто открыть</div></td></tr></table></div><!--<div id="cntrl-cont"><div id="girl" class="image"><img src="../my_project/assets/Balls/Girl_00.png"></div><div id="target" class="text">
+            Congratulations!<br> You've WON the First Level!
+        </div></div>--><div id="girl" class="grl"> You've WON the First Level!</div><div id="nextLevel"><table width="800" height="180"><tr><td><div id="target"><h1>Game Over</h1><p class="text"><i>Sorry, the next Level 2 is in development.</i></p></div></td></tr><tr><td><!--<a href="index.html">--><a href="index33.html"><div id="butt1" class="button targ" height="5">Exit Game</div></a><a href="my_project.html"><div id="butt2" class="button targ" height="5"><span>New Game</span></div></a></td></tr></table></div><div id="left"><table><tr><th><div class="score-item" style="position: relative;">Points per round</div></th></tr><tr><td>Score of round</td><td><div id="gameres" class="score-item" style="position: relative;">0</div></td></tr><tr><td>For the best result</td><td><div id="best" class="score-item" style="position: relative;">0</div></td></tr><tr><td>For the Strike</td><td><div id="strk" class="score-item" style="position: relative;">0</div></td></tr><tr><td>For the Spare</td><td><div id="spr" class="score-item" style="position: relative;">0</div></td></tr><tr><td>Total score</td><td><div id="totall" class="score-item" style="position: relative;">0</div></td></tr><tr><th><div class="score-item" style="position: relative;">Player's money</div></th></tr><tr><td><div id="totmoney" class="score-item" style="position: relative;">0.00</div></td><td><strike><i> BL</i></strike></td></tr><tr><th><div id="buy" class="score-butt" style="position: relative;">Buy</div></th></tr><tr><th><div id="sell" class="score-butt" style="position: relative;">Sell</div></th></tr><tr><th><div id="trans" class="score-butt" style="position: relative;">Cvt</div></th></tr><tr><th><div class="score-item" style="position: relative;">Final points</div></th></tr><tr><td><div id="lastpoint" class="score-item" style="position: relative;">0</div></td></tr></table></div><button id="toggle-storeLeft">Hide</button><div id="main_canvas_container"></div><div id="preloader_cont"><div id="prelod_static_path"><div id="prelod_dynamic_path"></div><span>0%</span></div></div><!--<div id="preloader_cont"><div id="preloader_box"><img src="./assets/logo.png" alt="Logo"><div id="prelod_static_path"><div id="prelod_dynamic_path"></div></div><div id="progress_text">0%</div></div></div>--><script>
+
+        /*var ext4 = document.getElementById('butt4');
+        var extwind = document.getElementById('exit-wind');
+
+        ext4.addEventListener('click', () => {
+            extwind.style.display = 'none';
+        });*/
+
+        var ext6 = document.getElementById('butt6');
+        var nextgame = document.getElementById('nextgame-wind');
+
+        ext6.addEventListener('click', () => {
+            nextgame.style.display = 'none';
+        });
+
+        var toggleBtn = document.getElementById('toggle-store');
+        var rightPanel = document.getElementById('right');
+
+        toggleBtn.addEventListener('click', () => {
+            rightPanel.classList.toggle('hidden');
+            toggleBtn.textContent = rightPanel.classList.contains('hidden') ? 'Show' : 'Hide';
+        });
+
+        var toggleBtnLeft = document.getElementById('toggle-storeLeft');
+        var leftPanel = document.getElementById('left');
+
+        toggleBtnLeft.addEventListener('click', () => {
+            leftPanel.classList.toggle('hidden');
+            toggleBtnLeft.textContent = leftPanel.classList.contains('hidden') ? 'Show' : 'Hide';
+        });
+    </script></body></html >
