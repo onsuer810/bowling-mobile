@@ -143,12 +143,12 @@ var SPARE = 0;// Очки за SPARE
 var RATE = 1.76;
 var PointTotal = 0;// Очки за весь очередной раунд
 
-var Money = -80.00;// Деньги игрока
-var store = [true, false, false, false, false, false];
-var _Collection = [true, false, false, false, false, false];
+var Money = 280.00;// Деньги игрока
+var store = [true, false, true, true, true, false];
+var _Collection = [true, false, true, true, true, false];
 var LAPS = 5;// Кол-во регулярных раундов
 var extra_Laps = 3;// Кол-во экстра раундов
-var _kol_Clctn = 1;// Кол-во шаров в коллекции
+var _kol_Clctn = 4;// Кол-во шаров в коллекции
 //Стоимость шаров
 var _Coll_stoim = [80.0, 99.0, 149.0, 169.0, 189.0, 45.0];
 
